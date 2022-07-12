@@ -1,16 +1,19 @@
 package classes
 
-data class CustomerKotlin(var name:String, var address:String)
+
+data class CustomerKotlin(var name:String, var address:String){
+    override fun toString(): String {
+        return "{\"id\": \"$address\",\"name\": \"$name\"}"
+
+    }
+}
 
 fun main(){
 
     val customer1 = CustomerKotlin("xyz","eds")
-    val customer2 = CustomerKotlin("xyz","eds")
+    val customer2 = CustomerKotlin("x","eds")
 
-
-    if (customer1==customer2){
-        println("They're same")
-    }
+    println(customer1)
 
 
 }
