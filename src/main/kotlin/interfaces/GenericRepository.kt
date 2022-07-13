@@ -22,7 +22,7 @@ class MyRepo:Repo{
         throw UnsupportedOperationException("uNSUPPORTED EXCPETION")
     }
 
-    override fun <T> getAll(): T {
+    override fun <T> getAll():List<T> {
         throw UnsupportedOperationException("unsupportred")
     }
 }
