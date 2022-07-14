@@ -17,8 +17,10 @@ fun main(){
 
     try {
         checkNumber("A")
+    }catch (e:IllegalStateException){
+        println("It is Illegal state exception")
     }catch (e:NotNumberException){
-        println("It's not a number")
+        println({e.message})
     }
 
 
