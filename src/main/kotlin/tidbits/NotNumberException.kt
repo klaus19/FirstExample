@@ -15,6 +15,11 @@ fun checkNumber(obj:Any){
 
 fun main(){
 
-  checkNumber(1)
+    try {
+        checkNumber("A")
+    }catch (e:NotNumberException){
+        println("It's not a number")
+    }
+
 
 }
