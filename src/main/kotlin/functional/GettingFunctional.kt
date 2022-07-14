@@ -11,4 +11,6 @@ fun main(){
 
     println(operation(1,2,::sum))
 
+    operation(1,2) { x, y -> x + y }
+
 }
