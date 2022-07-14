@@ -15,14 +15,12 @@ fun main(){
 
 val result = capitalAndPopulation("Madrid")
 
-    println(result.first)
-    println(result.second)
-
-
     val res = capitalCountry(country ="Madrid")
-    println(res.first)
-    println(res.second)
-    println(res.third)
+
+    val (capital,population) = capitalAndPopulation("Madrid")
+
+    println(capital)
+    println(population)
 
 
 }
